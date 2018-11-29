@@ -9,8 +9,7 @@ stages:
     env:
       NEXUS_HOST: 52.82.53.247:8081
     envFrom:
-    - sourceName: pipeline-secret
-      sourceKey: admin-token
+    - sourceKey: admin-token
       targetKey: NEXUS_TOKEN
 - name: Publish
   steps:
