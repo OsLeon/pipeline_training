@@ -7,10 +7,9 @@ stages:
         mkdir -p /root/.m2 && mv settings.xml /root/.m2/
         mvn clean install
     env:
-      NEXUS_HOST: http://52.82.53.247:8081
+      NEXUS_HOST: 52.82.53.247:8081
     envFrom:
-    - sourceName: pipeline-secret
-      sourceKey: admin-token
+    - sourceKey: admin-token
       targetKey: NEXUS_TOKEN
 - name: Publish
   steps:
