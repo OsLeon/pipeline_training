@@ -7,12 +7,12 @@
   <server> 
     <id>maven-snapshots</id> 
     <username>admin</username> 
-    <password>${env.NEXUS_TOKEN}</password> 
+    <password>admin123</password> 
   </server>
   <server> 
     <id>maven-releases</id> 
     <username>admin</username> 
-    <password>${env.NEXUS_TOKEN}</password> 
+    <password>admin123</password> 
   </server>
   <mirrors>
      <mirror>
